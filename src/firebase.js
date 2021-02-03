@@ -2,6 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/app';
 import 'firebase/database';
 import 'firebase/auth';
+import 'firebase/storage';
 
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -20,10 +21,16 @@ const config = {
 
   const firebaseDB = firebase.database()
   const firebaseMatches = firebaseDB.ref('matches');
+  const firebaseTeams = firebaseDB.ref('teams');
   const firebasePromotions = firebaseDB.ref('promotions');
+  const firebasePlayers = firebaseDB.ref('players');
+
 
   export {
       firebase,
       firebaseMatches,
-      firebasePromotions
+      firebasePromotions,
+      firebaseTeams,
+      firebaseDB,
+      firebasePlayers
   }

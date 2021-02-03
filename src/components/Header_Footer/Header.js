@@ -28,7 +28,7 @@ class Header extends Component {
                         <Link to="/the_team">
                             <Button color="interit">The Teams</Button>
                         </Link>
-                        <Link to="/matches">
+                        <Link to="/the_matches">
                             <Button color="interit">Matches</Button>
                         </Link>
                     </ToolBar>
